@@ -1,0 +1,12 @@
+.content {
+  list-style: none;
+  box-sizing: border-box;
+  height: 450px;
+  border-top: 1px solid var(--dark-app-header-divider-color);
+  padding: 20px;
+  background-color: var(--dark-app-bg-color);
+  box-shadow: 5px 5px 50px -7px rgba(0,0,0,0.79);
+  -webkit-box-shadow: 5px 5px 50px -7px rgba(0,0,0,0.79);
+  -moz-box-shadow: 5px 5px 50px -7px rgba(0,0,0,0.79);
+  overflow: hidden;
+}

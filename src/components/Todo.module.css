@@ -1,0 +1,17 @@
+.todo {
+  display: flex;
+  padding: 10px 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left {
+
+}
+/* 
+.checkbox {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+} */
+
