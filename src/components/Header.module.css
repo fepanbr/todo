@@ -3,33 +3,38 @@
   width: 100%;
   justify-content: space-between;
   background-color: var(--dark-app-header-color);
-  flex-grow: 1;
 }
 
 .icon {
   padding: 10px;
 }
 
-.filterButton {
-  position:relative;
-  margin-right: 20px;
-  height: 100%;
-  color: var(--dark-app-filter-color);
-  font-weight: bold;
-  background-color: transparent;
-  border: 0;
+.filterButtonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
 }
 
-.filterButton:hover {
-  color: var(--)
+.buttonWrapper {
+  padding: 20px 20px;
+  position: relative;
+}
+
+.buttonName {
+  cursor: pointer;
+  color: var(--dark-app-filter-color);
+  font-weight: bold;
+}
+
+.filterButton {
+  appearance: none;
 }
 
 .filterButton:focus::before {
-  content: "";
-  position:absolute;
+  content: '';
+  position: absolute;
   border: 1px solid var(--dark-app-point-color);
   width: 100%;
-  top: 35px;
   left: -1px;
 }

@@ -1,8 +1,21 @@
-import React from "react";
-import { BsFillTrashFill } from "react-icons/bs";
-import styled from "./Todo.module.css";
+import React from 'react';
+import { BsFillTrashFill } from 'react-icons/bs';
+import styled from './Todo.module.css';
 
-export default function Todo({ id, content, isCompleted }) {
+export default function Todo({
+  id,
+  content,
+  isCompleted,
+  toggleCheck,
+  onDelete,
+}) {
+  const handleChange = () => {
+    toggleCheck(id);
+  };
+
+  const handleDelete = () => {
+    onDelete(id);
+  };
   return (
     <li className={styled.todo}>
       <div className={styled.left}>
@@ -10,10 +23,12 @@ export default function Todo({ id, content, isCompleted }) {
           checked={isCompleted}
           className={styled.checkbox}
           type="checkbox"
+          onChange={handleChange}
+          id={id}
         />
-        {content}
+        <label htmlFor={id}>{content}</label>
       </div>
-      <BsFillTrashFill />
+      <BsFillTrashFill onClick={handleDelete} />
     </li>
   );
 }
