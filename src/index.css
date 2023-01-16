@@ -6,7 +6,8 @@
   --dark-app-bg-color: #272843;
   --dark-app-filter-color: #BF6C23;
   --dark-app-trash-color: #57585F;
-  --add-button-color: #434656;
+  --dark-app-add-btn-color: #EF852F;
+  --light-app-add-button-color: #434656;
   --light-app-header-color: #F6F5F7;
   --light-app-trash-color: #D6D6DA;
 }

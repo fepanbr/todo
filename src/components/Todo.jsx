@@ -9,7 +9,6 @@ export default function Todo() {
         <input className={styled.checkbox} type="checkbox" />
         삭제하기
       </div>
-
       <BsFillTrashFill />
     </li>
   );
